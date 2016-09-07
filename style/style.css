@@ -220,6 +220,7 @@ a {
 
 input, button {
 	outline: none; 
+	text-align: center;
 }
 
 button {
@@ -906,6 +907,7 @@ footer {
 	background-position: right;
 	background-color: #2A2A2A;
 	text-align: center;
+	clear: both;
 }
 	
 @media (max-width: 750px) {
@@ -1013,7 +1015,6 @@ footer {
 .footerSub input {
 	width: 260px;
 	padding: 10px;
-	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	letter-spacing: 2px;
@@ -1386,3 +1387,200 @@ h6 {
 	color: #FFF;
 }
 
+.contact-img {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+#contact-bg {
+	width: 1200px;
+	max-width: 100%;
+	height: auto;
+}
+
+.contact-icons {
+	position: absolute;
+	bottom: 0;
+	left: 125px;
+	right: 125px;
+	background-color: #FFF;
+	height: 180px;
+	max-height: 100%;
+	width: auto;
+}
+
+.email {
+	display: inline-block;
+	padding: 30px 50px 0px 50px;
+	width: 250px;
+	border-right: solid 2px #eee;
+}
+
+.email:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.phone {
+	display: inline-block;
+	padding: 30px 50px 0px 50px;
+	width: 250px;
+	border-right: solid 2px #eee;
+}
+
+.phone:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.address {
+	display: inline-block;
+	padding: 30px 50px 0px 50px;
+	width: 250px;
+}
+
+.address:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+@media (max-width: 1632px) {
+	.email, .phone, .address {
+		width: 150px;
+		padding: 20px 30px 0px 30px;
+	}
+
+	.email img, .phone img, .address img {
+		height: 30px;
+	}
+
+	.contact-icons {
+		height: 130px;
+	}
+
+	.contact-icons p {
+		font-size: 0.75em;
+	}
+}
+
+@media (max-width: 1105px) {
+	.email, .phone, .address {
+		padding: 10px 10px 0px 10px;
+	}
+}
+
+@media (max-width: 956px) {
+	.contact-icons {
+		position: initial;
+		margin-top: 15px;
+	}
+
+	.email, .phone, .address {
+		padding: 0;
+	}
+}
+
+@media (max-width: 454px) {
+	.email, .phone, .address {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+	}
+
+	.contact-icons {
+		height: 300px;
+	}
+
+	.contact-icons img {
+		height: 100%;
+		width: auto;
+	}
+
+	.contact-icons p {
+		font-size: 1em;
+	}
+}
+
+.contactUs {
+	height: 600px;
+	margin-bottom: 50px;
+}
+
+.map {
+	width: 50%;
+}
+
+.form {
+	width: 50%;
+}
+
+.form h3 {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 5px;
+}
+
+.form h5 {
+	font-size: 1em;
+	font-weight: bolder;
+	padding-bottom: 15px;
+}
+
+.form input, .form textarea {
+	padding: 10px;
+	border: none;
+	background-color: #eee;
+	width: 95%;
+}
+
+.form button {
+	background-color: #86AA64;
+	color: #FFF;
+	width: 175px;
+}
+
+.form button:hover {
+	background-color: #FFF;
+	color: #1B1B1B;
+	border: solid 1px #BBB;
+}
+
+#message {
+	height: 200px;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 1460px) {
+	.form {
+		width: 40%;
+	}
+}
+
+@media (max-width: 1240px) {
+	.map img {
+		height: 450px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.map {
+		margin-left: auto;
+	    margin-right: auto;
+	    width: 577px;
+	    max-width: 100%;
+	    height: auto;
+	    float: none;
+	}
+	.map img {
+		height: initial;
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.form {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
