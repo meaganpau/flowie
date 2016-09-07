@@ -86,7 +86,7 @@ body {
 	}
 }
 
-.navigationMenu {
+.navigationMenu{
 	width: 50%;
 	text-align: center;
 	display: inline-block;
@@ -105,7 +105,7 @@ body {
 	}
 }
 
-.navigationMenu a {
+.navigationMenu a, .breadcrumbs a {
 	color: #2D2D2D;
 }
 
@@ -228,6 +228,7 @@ button {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 	font-size: 0.75em;
+	border: none;
 }
 
 #viewProducts {
@@ -268,13 +269,14 @@ h1 {
 	}
 }
 
-
 h2 {
 	font-family: 'Raleway', sans-serif;
 	color: #FFF;
-	font-size: 2em;
+	font-size: 2.5em;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 10px;
+	margin-top: 0;
+	padding-top: 130px;
 }
 
 h3 {
@@ -344,8 +346,10 @@ p {
 	}
 }
 
-.welcomePics img {
-	max-height: 150px;
+@media (max-width: 1517px) {
+	.welcomePics img {
+		max-height: 150px;
+	}
 }
 
 .welcomePics img:hover {
@@ -588,7 +592,6 @@ p {
 
 .featureCart button {
 	background-color: transparent;
-	border: none;
 	width: 100%;
 }
 
@@ -1026,7 +1029,6 @@ footer {
 
 .footerSub button {
 	background-color: #DADE56;
-	border: none;
 	width: 150px;
 }
 
@@ -1067,3 +1069,320 @@ footer {
 	opacity: 0.3;
 	transition: 0.25s;
 }
+
+.sub-banner {
+	background-image: url('../assets/plants_wide.jpeg');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
+}
+
+@media (max-width: 778px) {
+	.sub-banner {
+		height: 200px;
+	}
+
+	.sub-banner h2{
+		padding-top: 80px;
+	}
+}
+
+.banner-overlay {
+	background: rgba(134, 170, 100, 0.75);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.breadcrumbs {
+	text-align: left;
+	border-bottom: solid 1px #eee;
+	height: 80px;
+	padding-left: 7%;
+	margin-bottom: 3%;
+}
+
+@media (max-width: 778px) {
+	.breadcrumbs {
+		text-align: center;
+		padding-left: 0;
+	}
+}
+
+.breadcrumbs ul {
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+.breadcrumbs li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.breadcrumbs a {
+	text-transform: lowercase;
+	font-size: 0.75em;
+}
+
+#arrow { 
+	color: rgba(134, 170, 100, 1);
+	font-size: 0.75em;
+}
+
+.breadcrumbs a:hover {
+	color: #86AA64;
+}
+
+.about-img {
+	position: relative;
+}
+
+.about-img img {
+	width: 2000px;
+	max-width: 100%;
+	height: auto;
+}
+
+.about-img p {
+	text-align: left;
+	background-color: #FFF;
+	padding: 2%;
+	font-size: 2em;
+	color: #86AA64;
+	text-decoration: underline; 
+	width: 600px;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+
+@media (max-width: 1030px) {
+	.about-img p {
+		display: none;
+	}
+}
+
+.order {
+	border-top: solid 2px #eee;
+}
+
+.order-modules {
+	text-align: center;
+}
+
+.delivery {
+	background-image: url("../assets/bg_logo_left.png");
+	height: 416px;
+	width: 294px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.delivery:hover {
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.delivery-text {
+	position: absolute;
+	bottom: 25%
+}
+
+.buy-online {
+	background-image: url("../assets/hover_image.jpeg");
+	height: 416px;
+	width: 294px;
+	display: inline-block;
+	background-size: 215%;
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	position: relative;
+}
+
+.buy-text {
+	position: absolute;
+	bottom: 25%;
+}
+
+.yellow-overlay {	
+	background: rgba(240, 255, 90, 0.75);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.services {
+	background-color: #F5F5F5;
+	height: 416px;
+	width: 294px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.services:hover {
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.services-text {
+	position: absolute;
+	bottom: 25%;
+}
+
+.discounts {	
+	background-image: url("../assets/bg_logo_right.jpg");
+	height: 416px;
+	width: 294px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.discounts:hover {
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.discounts-text {
+	position: absolute;
+	bottom: 25%;
+}
+
+.review {
+	height: 450px;
+	background-image: url("../assets/flower_pots.jpeg");
+	background-size: 120%;
+	background-position: 40% 70%;
+	text-align: center;
+}
+
+@media (max-width: 920px) {
+	.review {
+		height: 300px;
+	}
+}
+
+@media (max-width: 455px) {
+	.review {
+		height: 200px;
+	}
+}
+
+.johnson-review {
+	padding-top: 80px;
+	font-size: 2.5em;
+	color: #FFF;
+	letter-spacing: 3px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-style: italic;
+}
+
+@media (max-width: 920px) {
+	.johnson-review {
+		font-size: 1.5em;
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 455px) {
+	.johnson-review {
+		font-size: 1em;
+		padding-top: 15px;
+	}
+}
+
+.review button {
+	background-color: #252525;
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+@media (max-width: 455px) {
+	.review button {
+		font-size: 0.75em;
+		width: 200px;
+	}
+}
+
+.review button:hover {
+	background-color: #FFF;
+	color: #252525;
+	transition: 0.5s;
+}
+
+.white-overlay {
+	background: rgba(255,255, 255, 0.3); 
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.johnson {
+	color: #FFF;
+}
+
+@media (max-width: 455px) {
+	.johnson {
+		font-size: 0.75em;
+	}
+}
+
+.instagram-bg {
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+.follow {
+	position: absolute;
+	top: 0;
+	left: 20%;
+}
+
+.follow button {
+	background-color: #1B1B1B;
+	color: #FFF;
+}
+
+.follow button:hover {
+	background-color: #FFF;
+	color: #1B1B1B;
+}
+
+.insta {
+	position: absolute;
+	bottom: 0;
+	right: 20%;
+}
+
+.insta button {
+	background-color: #DADE56;
+	color: #1B1B1B;
+}
+
+.insta button:hover {
+	background-color: #FFF;
+	color: #1B1B1B;
+}
+
+h6 {
+	font-family: 'Raleway', sans-serif;
+	color: #86AA64;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.buy-text h6, .buy-text p {
+	color: #FFF;
+}
+
